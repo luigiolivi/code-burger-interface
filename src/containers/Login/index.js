@@ -1,10 +1,12 @@
 import React from 'react'
 
+import LoginImg from '../../assets/login-image.png'
+import Logo from '../../assets/logo.png'
 import {
   Container,
-  Background,
+  LoginImage,
   ContainerItems,
-  P,
+  Label,
   Input,
   Button,
   SignInLink
@@ -13,14 +15,14 @@ import {
 function Login() {
   return (
     <Container>
-      <Background />
+      <LoginImage src={LoginImg} alt="logo-image" />
       <ContainerItems>
-        <img />
+        <img src={Logo} alt="logo" />
         <h1>Login</h1>
 
-        <P>Email</P>
+        <Label>Email</Label>
         <Input />
-        <P>Senha</P>
+        <Label>Senha</Label>
         <Input />
 
         <Button>Sign In</Button>
