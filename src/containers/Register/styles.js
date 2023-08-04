@@ -11,7 +11,7 @@ export const Container = styled.div`
   align-items: center;
 `
 
-export const LoginImage = styled.img`
+export const RegisterImage = styled.img`
   height: 90%;
 `
 
@@ -19,7 +19,7 @@ export const ContainerItems = styled.div`
   border-radius: 0 10px 10px 0;
   background: #373737;
   height: 90%;
-  padding: 25px 75px;
+  padding: 25px 25px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -31,7 +31,7 @@ export const ContainerItems = styled.div`
     font-weight: 500;
     line-height: normal;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
   }
 
   img {
@@ -52,7 +52,7 @@ export const Label = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin: 25px 0 3px;
+  margin: ${props => (props.error ? '10px 0 2px' : '15px 0 3px')};
 `
 
 export const Input = styled.input`
@@ -60,7 +60,7 @@ export const Input = styled.input`
   background: #fff;
   box-shadow: 3px 3px 10px 0px rgba(74, 144, 226, 0.19);
   border: ${props => (props.error ? '2px solid #CC1717' : 'none')};
-  height: 40px;
+  height: 34px;
   width: 390px;
   padding-left: 10px;
 `

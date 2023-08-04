@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
+import Register from './containers/Register'
 import Login from './containers/Login'
 import GlobalStyles from './styles/globalStyles'
 
