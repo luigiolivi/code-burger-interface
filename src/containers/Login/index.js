@@ -20,8 +20,7 @@ import {
 } from './styles'
 
 function Login() {
-  const users = useUser()
-  console.log(users)
+  const { putUserData, userData } = useUser()
 
   const schema = Yup.object().shape({
     email: Yup.string()
@@ -39,7 +38,7 @@ function Login() {
   } = useForm({ resolver: yupResolver(schema) })
 
   const onSubmit = async clientData => {
-    const response = await toast.promise(
+    const { data } = await toast.promise(
       api.post('sessions', {
         email: clientData.email,
         password: clientData.password
@@ -51,7 +50,8 @@ function Login() {
       }
     )
 
-    console.log(response)
+    putUserData(data)
+    console.log(userData)
   }
 
   return (
