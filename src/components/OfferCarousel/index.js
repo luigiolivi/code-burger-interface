@@ -4,7 +4,7 @@ import Carousel from 'react-elastic-carousel'
 import Offer from '../../assets/offers.png'
 import api from '../../services/api'
 import formatCurrency from '../../utils/formatCurrency'
-import { Container, CategoryImg, ContainerItems, Image, Button } from './styles'
+import { Container, OfferImg, ContainerItems, Image, Button } from './styles'
 
 function OfferCarousel() {
   const [offers, setOffers] = useState([])
@@ -35,7 +35,7 @@ function OfferCarousel() {
 
   return (
     <Container>
-      <CategoryImg src={Offer} alt="offer-logo" />
+      <OfferImg src={Offer} alt="offer-logo" />
 
       <Carousel
         itemsToShow={5}

@@ -27,11 +27,12 @@ export const Container = styled.div`
   }
 `
 
-export const CategoryImg = styled.img``
+export const OfferImg = styled.img``
 
 export const ContainerItems = styled.div`
   display: flex;
   flex-direction: column;
+  width: 280px;
 
   p {
     color: #424242;
@@ -43,8 +44,9 @@ export const ContainerItems = styled.div`
 `
 
 export const Image = styled.img`
-  width: 200px;
+  width: 260px;
   border-radius: 15px;
+  margin-bottom: 16px;
 `
 
 export const Button = styled.button`
